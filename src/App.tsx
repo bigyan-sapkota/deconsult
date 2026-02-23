@@ -1,9 +1,9 @@
-import Stats from "./components/home/stats";
+import ContextProvider from "./providers/context-provider";
 
 export default function App() {
   return (
-    <div className="h-[400vh]">
-      <Stats />
-    </div>
+    <ContextProvider>
+      <div></div>
+    </ContextProvider>
   );
 }
